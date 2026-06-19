@@ -1,0 +1,15 @@
+model: Qwen/Qwen2.5-0.5B-Instruct
+host: 127.0.0.1
+port: 8000
+api_base: http://127.0.0.1:8000/v1
+endpoint: /chat/completions
+
+concurrency_levels: [1, 2, 4, 8, 16]
+num_requests: 50
+max_tokens: 128
+temperature: 0.0
+
+prompts:
+  - "Explain KV cache in LLM inference in simple terms."
+  - "Summarize the difference between prefill and decode phases."
+  - "Write a short explanation of continuous batching."
