@@ -1,0 +1,15 @@
+model: fake-qwen-0.5b
+
+api_base: http://127.0.0.1:8000/v1
+endpoint: /chat/completions
+
+concurrency_levels: [1]
+num_requests: 3
+
+max_tokens: 32
+temperature: 0.0
+
+prompts:
+  - "Explain KV cache in one sentence."
+  - "What is LLM prefill?"
+  - "What is LLM decode?"

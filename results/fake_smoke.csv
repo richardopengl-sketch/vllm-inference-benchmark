@@ -1,0 +1,4 @@
+concurrency,request_id,success,latency_sec,output_tokens,error
+1,0,True,0.007082000025548041,16,
+1,1,True,0.0028138000052422285,14,
+1,2,True,0.002250799909234047,14,
