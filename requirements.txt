@@ -1,2 +1,6 @@
 aiohttp
 pyyaml
+pytest
+ruff
+fastapi
+uvicorn

@@ -152,6 +152,7 @@ def summarize(results: List[RequestResult]) -> dict:
         "total_output_tokens": total_output_tokens,
     }
 
+
 async def check_server_ready(api_base: str) -> bool:
     url = f"{api_base}/models"
 
@@ -168,6 +169,7 @@ async def check_server_ready(api_base: str) -> bool:
     except Exception as e:
         print(f"Server is not reachable at {api_base}. Error: {repr(e)}")
         return False
+
 
 def write_results_csv(path: str, results: List[RequestResult]) -> None:
     with open(path, "w", newline="", encoding="utf-8") as f:
@@ -202,7 +204,7 @@ async def main():
         print("Later on Azure GPU VM, start it with:")
         print("  bash scripts/start_vllm_server.sh")
         return
-    
+
     all_results: List[RequestResult] = []
 
     for concurrency in config["concurrency_levels"]:
