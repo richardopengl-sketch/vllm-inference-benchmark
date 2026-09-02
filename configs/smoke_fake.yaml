@@ -8,6 +8,7 @@ num_requests: 3
 
 max_tokens: 32
 temperature: 0.0
+stream: true
 
 prompts:
   - "Explain KV cache in one sentence."
